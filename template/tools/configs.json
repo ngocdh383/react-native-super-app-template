@@ -1,0 +1,6 @@
+{
+    "assets": {
+        "icons": "../src/assets/icons",
+        "pictures": "../src/assets/images"
+    }
+}
