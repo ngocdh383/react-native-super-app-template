@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">ReactNativeSuperAppTemplate</string>
-    <string name="CodePushDeploymentKey"></string>
+    <string name="CodePushDeploymentKey">CODE_PUSH_DEPLOYMENT_KEY</string>
 </resources>

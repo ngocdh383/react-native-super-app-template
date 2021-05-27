@@ -1,4 +1,46 @@
 {
-  "name": "ReactNativeSuperAppTemplate",
-  "displayName": "ReactNativeSuperAppTemplate"
+    "name": "ReactNativeSuperAppTemplate",
+    "displayName": "ReactNativeSuperAppTemplate",
+    "deployments": {
+        "DEV": {
+            "android": "",
+            "ios": ""
+        },
+        "TESTING": {
+            "android": "",
+            "ios": ""
+        },
+        "STAGING": {
+            "android": "",
+            "ios": ""
+        },
+        "PRODUCTION": {
+            "android": "",
+            "ios": ""
+        }
+    },
+    "miniApps": {
+        "DemoMiniApp": {
+            "packageName": "TestMiniApp_Module",
+            "mainComponentName": "TestMiniApp",
+            "deployments": {
+                "DEV": {
+                    "android": "Zc9Q99CkIKlBbHeVDZ9ZhN63i9CtrxwJRJlXE",
+                    "ios": ""
+                },
+                "TESTING": {
+                    "android": "FR4AVgcA2-xCUkHQ7ND56pzp-z7r5voHLMQT-",
+                    "ios": ""
+                },
+                "STAGING": {
+                    "android": "0dXNSQOiTPhlOKT8IS_lmTqy7mosbHbLsDbFE",
+                    "ios": ""
+                },
+                "PRODUCTION": {
+                    "android": "BDvK8yIeKaDQUPpJX8GLGF1yfRnSpaP8dqx2x",
+                    "ios": ""
+                }
+            }
+        }
+    }
 }

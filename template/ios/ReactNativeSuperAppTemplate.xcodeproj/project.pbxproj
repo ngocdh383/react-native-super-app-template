@@ -17,6 +17,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* ReactNativeSuperAppTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeSuperAppTemplateTests.m */; };
 		32631F977DF54FB6EAA31907 /* libPods-ReactNativeSuperAppTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C5645C2E7A0131B3410E6C /* libPods-ReactNativeSuperAppTemplate.a */; };
 		4D7E4FE251E5A041D5DBDB2E /* libPods-ReactNativeSuperAppTemplate-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9572376AFD0068671EA891A3 /* libPods-ReactNativeSuperAppTemplate-tvOS.a */; };
+		5E841A2A265F5DCF007EB225 /* TestMiniApp_Module.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5E841A29265F5DCF007EB225 /* TestMiniApp_Module.zip */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E1BA3AF48D599AC3CE6C99C4 /* libPods-ReactNativeSuperAppTemplate-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4371651C2C6A86B442323B73 /* libPods-ReactNativeSuperAppTemplate-tvOSTests.a */; };
 		E293C82002E9AE2E327ECAAC /* libPods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CDD53A017EEB835E5F2FB9 /* libPods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.a */; };
@@ -56,6 +57,7 @@
 		3C6E4EB3794D23A9652590A1 /* Pods-ReactNativeSuperAppTemplate-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSuperAppTemplate-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeSuperAppTemplate-tvOS/Pods-ReactNativeSuperAppTemplate-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		4371651C2C6A86B442323B73 /* libPods-ReactNativeSuperAppTemplate-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSuperAppTemplate-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C411718C5C442AA255A45C6 /* Pods-ReactNativeSuperAppTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSuperAppTemplate.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSuperAppTemplate/Pods-ReactNativeSuperAppTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		5E841A29265F5DCF007EB225 /* TestMiniApp_Module.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = TestMiniApp_Module.zip; sourceTree = "<group>"; };
 		80DAC8ADB5914C94D1E133AF /* Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests/Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeSuperAppTemplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89CDD53A017EEB835E5F2FB9 /* libPods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeSuperAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5E841A28265F5D77007EB225 /* modules */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -148,7 +151,6 @@
 				E9ABC86797FA4D340AD9D566 /* Pods-ReactNativeSuperAppTemplate-tvOSTests.debug.xcconfig */,
 				C0B011D13A542E95B912DAEE /* Pods-ReactNativeSuperAppTemplate-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +165,14 @@
 				4371651C2C6A86B442323B73 /* libPods-ReactNativeSuperAppTemplate-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E841A28265F5D77007EB225 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				5E841A29265F5DCF007EB225 /* TestMiniApp_Module.zip */,
+			);
+			path = modules;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -209,7 +219,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				D65F2F2278F28933554E249B /* [CP] Embed Pods Frameworks */,
 				52F00A4892C781B46BCD1BB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -232,7 +241,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				945F42D5616F35BCDEDD1324 /* [CP] Embed Pods Frameworks */,
 				418D0D89B6DAA486FEF81DE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -344,6 +352,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5E841A2A265F5DCF007EB225 /* TestMiniApp_Module.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,24 +482,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		945F42D5616F35BCDEDD1324 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSuperAppTemplate/Pods-ReactNativeSuperAppTemplate-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSuperAppTemplate/Pods-ReactNativeSuperAppTemplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A301A8BEEDA9986B72F42727 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,24 +502,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D65F2F2278F28933554E249B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests/Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests/Pods-ReactNativeSuperAppTemplate-ReactNativeSuperAppTemplateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB598A5F98884733B2B650D1 /* [CP] Check Pods Manifest.lock */ = {

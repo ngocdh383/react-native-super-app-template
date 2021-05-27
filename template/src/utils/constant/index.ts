@@ -1,0 +1,1 @@
+export const IS_FIRST_TIME_OPEN_APP = 'IS_FIRST_TIME_OPEN_APP';

@@ -1,16 +1,17 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { isRunningInSuperApp } from "../../utils/functions";
+import React, {Component} from 'react';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
-interface Props {}
+interface Props {
+  navigation: any;
+}
 
 interface State {}
 
@@ -24,9 +25,12 @@ class MainScreenComponent extends Component<Props, State> {
     return (
       <View style={styles.container}>
         <Text>Main Screen</Text>
-        <Text>
-          Is Running in super App: {isRunningInSuperApp() ? "true" : "false"}
-        </Text>
+        <Button
+          title="Go to Mini App demo"
+          onPress={() => {
+            this.props.navigation.navigate('DemoMiniApp');
+          }}
+        />
       </View>
     );
   }

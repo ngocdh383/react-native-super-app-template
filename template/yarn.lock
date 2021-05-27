@@ -979,6 +979,13 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@react-native-async-storage/async-storage@^1.15.4":
+  version "1.15.4"
+  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.15.4.tgz#cdba464ca3bb9f10ec538342cbf2520c06f453ab"
+  integrity sha512-pC0MS6UBuv/YiVAxtzi7CgUed8oCQNYMtGt0yb/I9fI/BWTiJK5cj4YtW2XtL95K5IuvPX/6uGWaouZ8KqXwdg==
+  dependencies:
+    deep-assign "^3.0.0"
+
 "@react-native-community/cli-debugger-ui@^4.13.1":
   version "4.13.1"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.13.1.tgz#07de6d4dab80ec49231de1f1fbf658b4ad39b32c"
@@ -2529,6 +2536,13 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
+deep-assign@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-3.0.0.tgz#c8e4c4d401cba25550a2f0f486a2e75bc5f219a2"
+  integrity sha512-YX2i9XjJ7h5q/aQ/IM9PEwEnDqETAIYbggmdDB3HLTlSgo1CxPsj6pvhPG68rq6SVE0+p+6Ywsm5fTYNrYtBWw==
+  dependencies:
+    is-obj "^1.0.0"
+
 deep-diff@^0.3.5:
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/deep-diff/-/deep-diff-0.3.8.tgz#c01de63efb0eec9798801d40c7e0dae25b582c84"
@@ -3994,6 +4008,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+is-obj@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+  integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
 
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
@@ -6007,10 +6026,10 @@ react-native-code-push@^7.0.1:
     semver "^7.3.2"
     xcode "3.0.1"
 
-react-native-commons-utils@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-commons-utils/-/react-native-commons-utils-0.0.2.tgz#1adacb466fd795c446de41d62f92d60e1bfdb837"
-  integrity sha512-l1ZR+/H/2JTzo6K6A8oH5YelFY8CRLmDCvKPEYmS0j9dxtG18Pn13yl9np992Hvxs7nC4hgLD9GanWxbkRZAsg==
+react-native-commons-utils@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-commons-utils/-/react-native-commons-utils-0.0.3.tgz#112ab0884061f335d79893f05714b4865833fb93"
+  integrity sha512-Fw1eEVsnl4fzU4zSF9vfH+YdeOXnicnKhE96aJLfC08Nq5CHVayZrJ/AtxuvtZh4m3SjlJV+nfcPqQezB8ljKQ==
 
 react-native-fs@^2.18.0:
   version "2.18.0"
