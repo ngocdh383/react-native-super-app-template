@@ -1,5 +1,5 @@
-# react-native-mini-app-template
+# react-native-super-app-template
 
 ## Getting started
 
-`$ npx react-native init AppName --template react-native-mini-app-template`
+`$ npx react-native init AppName --template react-native-super-app-template`
