@@ -1,7 +1,7 @@
 {
     "name": "react-native-super-app-template",
     "title": "React Native Super App Template",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "TODO",
     "scripts": {
         "test": "jest"
