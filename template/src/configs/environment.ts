@@ -12,4 +12,4 @@ export enum Environment {
   PRODUCTION = 'PRODUCTION',
 }
 
-export const ENV = Environment.TESTING;
+export const ENV = Environment.DEV;

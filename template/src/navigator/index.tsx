@@ -4,70 +4,45 @@ import {createStackNavigator} from '@react-navigation/stack';
 import SplashScreen from '../screens/Splash';
 import MainScreen from '../screens/Main';
 import DemoMiniAppScreen from '../screens/DemoMiniApp';
-import {checkVersionMultiMiniApp} from 'react-native-mini-app-view';
-import {ENV} from '../configs/environment';
-import {miniApps} from '../../app.json';
-import {isOpenAppFisrtTime} from '../utils/function';
-
-function onUpdateMiniAppsBegin(values: any) {
-  console.log('onUpdateBegin: ', values);
-}
-
-function onUpdateMiniAppsError(error: any) {
-  console.log('onUpdateError: ', error);
-}
-
-function onUpdateMiniAppsFinish(res: any) {
-  console.log('onUpdateFinish: ', res);
-}
+import {
+  checkUpdateAllMiniApp,
+  isOpenAppFisrtTime,
+  onUpdateMiniAppsBegin,
+  onUpdateMiniAppsError,
+  onUpdateMiniAppsFinish,
+} from '../utils/function';
 
 async function onReady() {
   const isFisrtTime = await isOpenAppFisrtTime();
   if (!isFisrtTime) {
-    // console.log('onReady: check because no first time');
-    checkVersionMultiMiniApp(ENV, miniApps, {
-      onGetLocalPackageError: (error: any) => {
-        console.log('onGetLocalPackageError: ', error);
-      },
-      onGetRemotePackageError: (error: any) => {
-        console.log('onGetRemotePackageError: ', error);
-      },
-      onSaveRemotePackageInfoError: (error: any) => {
-        console.log('onSaveRemotePackageInfoError: ', error);
-      },
-    })
-      .then((result: any) => {
-        const {appsUpdateOnline, appsUpdateOffline, updateApps} = result;
-        if (appsUpdateOnline.length > 0) {
-          console.log('Cần update from online: ', appsUpdateOnline);
-        } else {
-          console.log('Không cần update from online');
-        }
+    try {
+      const result = await checkUpdateAllMiniApp();
+      const {appsUpdateOnline, appsUpdateOffline, updateApps} = result;
+      if (appsUpdateOnline.length > 0) {
+        console.log('Mini apps need online update: ', appsUpdateOnline);
+      }
 
-        if (appsUpdateOffline.length > 0) {
-          console.log('Cần update from offline: ', appsUpdateOffline);
-        } else {
-          console.log('Không cần update from offline');
-        }
+      if (appsUpdateOffline.length > 0) {
+        console.log('Mini apps need offline update: ', appsUpdateOffline);
+      }
 
-        const all = [...appsUpdateOnline, ...appsUpdateOffline];
-        if (all.length > 0) {
-          updateApps(all, {
-            onUpdateBegin: onUpdateMiniAppsBegin,
-            onUpdateError: onUpdateMiniAppsError,
-            onUpdateFinish: onUpdateMiniAppsFinish,
+      const all = [...appsUpdateOnline, ...appsUpdateOffline];
+      if (all.length > 0) {
+        updateApps(all, {
+          onUpdateBegin: onUpdateMiniAppsBegin,
+          onUpdateError: onUpdateMiniAppsError,
+          onUpdateFinish: onUpdateMiniAppsFinish,
+        })
+          .then((values: any) => {
+            console.log('updateApps-success: ', values);
           })
-            .then((values: any) => {
-              console.log('updateApps-success: ', values);
-            })
-            .catch((error: any) => {
-              console.log('updateApps-error: ', error.message);
-            });
-        }
-      })
-      .catch((error: any) => {
-        console.log('checkVersionMultiMiniApp: ', error);
-      });
+          .catch((error: any) => {
+            console.log('updateApps-error: ', error.message);
+          });
+      }
+    } catch (error) {
+      console.log('checkVersionMultiMiniApp: ', error);
+    }
   }
 }
 
