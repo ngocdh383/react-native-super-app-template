@@ -26,19 +26,19 @@
             "deployments": {
                 "DEV": {
                     "android": "Zc9Q99CkIKlBbHeVDZ9ZhN63i9CtrxwJRJlXE",
-                    "ios": ""
+                    "ios": "ahgZ1vasqTQ1zCu6T6vsh9gxGUJiWR9GFIlSt"
                 },
                 "TESTING": {
                     "android": "FR4AVgcA2-xCUkHQ7ND56pzp-z7r5voHLMQT-",
-                    "ios": ""
+                    "ios": "QkjSF_IYKH7nSTYtS6ljn8X3QyzeLUYvhFlc1"
                 },
                 "STAGING": {
                     "android": "0dXNSQOiTPhlOKT8IS_lmTqy7mosbHbLsDbFE",
-                    "ios": ""
+                    "ios": "wMcFSxEOYKYpaGgh2tTVr_bEX618I8SH_p1AR"
                 },
                 "PRODUCTION": {
                     "android": "BDvK8yIeKaDQUPpJX8GLGF1yfRnSpaP8dqx2x",
-                    "ios": ""
+                    "ios": "TyjhKir0Cn1WEttME3xQFtdOJfzFr7L82lrEf"
                 }
             }
         }
